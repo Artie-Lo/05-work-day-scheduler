@@ -13,7 +13,7 @@ $(document).ready(function () {// loading html & css
     //display day & time using moment.js.
     $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
 
-    $(".saveBtn").on("click", function () {
+    $(".clickBtn").on("click", function () {
        
         console.log(this);
         let text = $(this).siblings(".description").val(); 
@@ -24,19 +24,19 @@ $(document).ready(function () {// loading html & css
 
     function scheduledTime() {
         
-        var currentHour = moment().hour(); // use of moment.js
+        var currentTime = moment().hour(); // use of moment.js
 
-        $(".time-block").each(function () {
-            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
-            console.log( blockHour, currentHour)
+        $(".time").each(function () {
+            var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
+            console.log( hourBlock, currentTime)
 
             //past, present, or future schedule item
-            if (blockHour < currentHour) {
+            if (hourBlock < currentTime) {
                 $(this).addClass("past");
                 $(this).removeClass("future");
                 $(this).removeClass("present");
             }
-            else if (blockHour === currentHour) {
+            else if (hourBlock === currentTime) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
                 $(this).removeClass("future");
