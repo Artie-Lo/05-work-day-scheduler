@@ -1,0 +1,66 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-size 20px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  color: black;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  height: 80px;
+  border-top: 1px solid black;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  /*border-top: 1px solid #000000;*/
+}
+
+.last {
+  background-color: #ffffff;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  /*border-top: 1px solid #000000;*/
+}
+
+.past {
+  background-color: gray;
+  color: white;
+}
+
+.present {
+  background-color: #06ad2a;
+  color: white;
+}
+
+.future {
+  background-color: #d40e0e;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-radius: 15px;
+  background-color: #0f118d;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition:all 0.1s ease-in-out;
+}
