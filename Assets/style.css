@@ -28,7 +28,7 @@ textarea {
 
 .hour {
   background-color: #1e5704;
-  border-radius: 15px black;
+  border-radius: 15px;
   color: #000000;
   /*border-top: 1px solid #000000;*/
 }
@@ -36,7 +36,7 @@ textarea {
 .last {
   background-color: #1e5704;
   color: #000000;
-  border-bottom: 1px solid #000000;
+  border-radius: 15px;
   /*border-top: 1px solid #000000;*/
 }
 
